@@ -16,9 +16,12 @@
   ],
   "dependencies": {
     "lodash": "^4.11.2",
+    "passport-jwt": "^2.0.0",
+    "passport-local": "^1.0.0",
     "trailpack-core": "^1.0.0-beta-3",
     "trailpack-express4": "^1.0.0-beta-2",
     "trailpack-footprints": "^1.0.0-beta-6",
+    "trailpack-passport": "^1.0.0-beta-3",
     "trailpack-repl": "^1.0.0-beta-3",
     "trailpack-router": "^1.0.0-beta-4",
     "trailpack-waterline": "^1.0.0-alpha-6",
