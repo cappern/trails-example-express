@@ -15,7 +15,8 @@
 module.exports = {
 
   DefaultController: {
-    info: [ ]
-  }
+    info: []
+  },
+  FootprintController: ['Passport.jwt']
 
 }

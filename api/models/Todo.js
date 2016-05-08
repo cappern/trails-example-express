@@ -4,7 +4,7 @@ const Model = require('trails-model')
 
 /**
  * @module Todo
- * @description Todo
+ * @description Generated Trails.js model
  */
 module.exports = class Todo extends Model {
 
