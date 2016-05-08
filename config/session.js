@@ -38,7 +38,7 @@ module.exports = {
         secretOrKey: SECRET,
         issuer: ISSUER,
         audience: AUDIENCE,
-        jwtFromRequest: ExtractJwt.fromUrlQueryParameter('token')
+        jwtFromRequest: ExtractJwt.fromAuthHeader()
       }
     },
 
