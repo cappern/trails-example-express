@@ -7,10 +7,19 @@ const Model = require('trails-model')
  * @description A User model
  */
 module.exports = class User extends Model {
-  static schema () {
+  static schema() {
     return {
       username: {
-        type: 'string'
+        type: 'string',
+        unique: true
+      },
+      email: {
+        type: 'email',
+        unique: true
+      },
+      passports: {
+        collection: 'Passport',
+        via: 'user'
       }
     }
   }

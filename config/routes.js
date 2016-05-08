@@ -12,15 +12,6 @@
 module.exports = [
 
   /**
-   * Render the HelloWorld view
-   */
-  {
-    method: 'GET',
-    path: '/',
-    handler: 'ViewController.helloWorld'
-  },
-
-  /**
    * Constrain the DefaultController.info handler to accept only GET requests.
    */
   {
