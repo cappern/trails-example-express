@@ -27,14 +27,33 @@ module.exports = {
      * run "npm install --save waterline-sqlite3"
      */
 
-    dev: {
-      adapter: require('waterline-sqlite3'),
-      migrate: 'alter'
+    //   dev: {
+    //     adapter: require('waterline-sqlite3'),
+    //     migrate: 'alter'
+    //   }
+    // },
+
+    // models: {
+    //   defaultStore: 'dev',
+    //   migrate: 'alter'
+    // },
+
+
+
+    mongodb: {
+      adapter: require('sails-mongo'),
+      migrate: 'alter',
+      host: 'localhost',
+      port: 27017,
+      database: 'trails'
     }
+
   },
 
   models: {
-    defaultStore: 'dev',
+    defaultStore: 'mongodb',
     migrate: 'alter'
   }
+
+
 }
