@@ -52,11 +52,17 @@ module.exports = {
 
   cache: 31557600000,
 
-  /**
+  /**http://localhost:3000/api/v1/todo
    * The port to bind the web server to
    */
-  port: process.env.PORT || 3000
+ host:'www.gtz.com',
+ 
+// host:'74.114.164.18',
+  port: process.env.PORT || 9050  //9050// 3000   //9050
+// host:'www.gtz.com',
+//     port: process.env.PORT || 9012,
 
+//  environment: process.env.NODE_ENV || 'development'
   /**
    * Alternate method to add multiple template engine, for single view template use config.view.engine
    */
