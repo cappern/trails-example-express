@@ -1,1 +1,0 @@
-exports.webConfig = require('./webconfig')

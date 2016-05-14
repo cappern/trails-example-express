@@ -1,1 +1,0 @@
-exports.en = require('./en')
