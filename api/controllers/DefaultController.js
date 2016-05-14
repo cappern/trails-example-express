@@ -17,4 +17,8 @@ module.exports = class DefaultController extends Controller {
   info(req, res) {
     res.status(200).json(this.app.services.DefaultService.getApplicationInfo())
   }
+
+  options(req, res) {
+    res.send('put,path,post,get,delete')
+  }
 }

@@ -13,11 +13,17 @@ module.exports = {
    * Middlewares to load (in order)
    */
   middlewares: {
-
+    //FIXME allow cors origin to all for demo purpose only
+    cors: (req, res, next) => {
+      res.header("Access-Control-Allow-Origin", "*")
+      res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+      next()
+    },
 
     //middlewares loading order
     order: [
       'addMethods',
+      'cors',
       'cookieParser',
       'session',
       'passportInit',

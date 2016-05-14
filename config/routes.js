@@ -18,5 +18,9 @@ module.exports = [
     method: [ 'GET' ],
     path: '/api/v1/default/info',
     handler: 'DefaultController.info'
+  }, {
+    method: 'OPTIONS',
+    path: '*',
+    handler: 'DefaultController.options'
   }
 ]
