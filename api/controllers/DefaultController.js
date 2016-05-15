@@ -19,6 +19,6 @@ module.exports = class DefaultController extends Controller {
   }
 
   options(req, res) {
-    res.send('put,path,post,get,delete')
+    res.send('GET,PATCH,POST,PUT,DELETE,OPTIONS')
   }
 }

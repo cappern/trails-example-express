@@ -16,7 +16,8 @@ module.exports = {
     //FIXME allow cors origin to all for demo purpose only
     cors: (req, res, next) => {
       res.header("Access-Control-Allow-Origin", "*")
-      res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+      res.header("Access-Control-Allow-Methods", "GET,PATCH,POST,PUT,DELETE,OPTIONS")
+      res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization")
       next()
     },
 
