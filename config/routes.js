@@ -11,16 +11,20 @@
 
 module.exports = [
 
-  /**
-   * Constrain the DefaultController.info handler to accept only GET requests.
-   */
+/**
+ * Constrain the DefaultController.info handler to accept only GET requests.
+ */
   {
-    method: [ 'GET' ],
+    method: ['GET'],
     path: '/api/v1/default/info',
     handler: 'DefaultController.info'
   }, {
     method: 'OPTIONS',
     path: '*',
     handler: 'DefaultController.options'
+  }, {
+    method: 'GET',
+    path: '/api/v1/todo/custom',
+    handler: 'TodoController.customAction'
   }
 ]
