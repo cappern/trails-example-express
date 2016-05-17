@@ -23,8 +23,8 @@ module.exports = [
     path: '*',
     handler: 'DefaultController.options'
   }, {
-    method: 'GET',
-    path: '/api/v1/todo/custom',
+    method: ['get'],
+    path: '/api/v1/todo',
     handler: 'TodoController.customAction'
   }
 ]
