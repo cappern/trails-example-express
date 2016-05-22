@@ -13,10 +13,5 @@
 'use strict'
 
 module.exports = {
-
-  DefaultController: {
-    info: []
-  },
   FootprintController: ['Passport.jwt']
-
 }
