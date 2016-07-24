@@ -14,19 +14,19 @@
     "trailsjs"
   ],
   "dependencies": {
-    "express": "^4.13.4",
+    "express": "^4.14.0",
     "lodash": "^4.13.1",
-    "passport-jwt": "^2.0.0",
+    "passport-jwt": "^2.1.0",
     "passport-local": "^1.0.0",
     "sails-mongo": "^0.12.0",
     "trailpack-core": "^1.0.0",
-    "trailpack-express": "^1.0.0",
-    "trailpack-footprints": "^1.0.0-beta-7",
-    "trailpack-passport": "^1.0.0-beta-7",
-    "trailpack-repl": "^1.0.6",
-    "trailpack-router": "^1.0.2",
+    "trailpack-express": "^1.0.9",
+    "trailpack-footprints": "^1.0.1",
+    "trailpack-passport": "^1.0.0-beta-9",
+    "trailpack-repl": "^1.0.8",
+    "trailpack-router": "^1.0.7",
     "trailpack-waterline": "^1.0.0-beta-1",
-    "trails": "^1.0.0",
+    "trails": "^1.0.4",
     "trails-controller": "^1.0.0-beta-2",
     "trails-model": "^1.0.0-beta-2",
     "trails-policy": "^1.0.2",
@@ -35,7 +35,7 @@
     "winston": "^2.2"
   },
   "devDependencies": {
-    "eslint": "^2.11.0",
+    "eslint": "^2.13.1",
     "eslint-config-trails": "^1.0.7",
     "mocha": "^2.5.3",
     "supertest": "^1.2"
