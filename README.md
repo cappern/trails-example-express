@@ -13,7 +13,7 @@ trailpack-waterline
 ## Registration 
 Postman is your friend : 
 ```
-POST /auth/local/register HTTP/1.1
+POST /api/v1/auth/local/register HTTP/1.1
 Host: localhost:3000
 Content-Type: application/json
 Accept: application/json
@@ -26,7 +26,7 @@ Postman-Token: c46e47f9-bbce-1143-5278-bbc4405f9dd1
 ## Login 
 Postman is your friend : 
 ```
-POST /auth/local HTTP/1.1
+POST /api/v1/auth/local HTTP/1.1
 Host: localhost:3000
 Content-Type: application/json
 Accept: application/json
