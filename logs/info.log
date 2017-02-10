@@ -1,0 +1,10 @@
+{"level":"info","message":"config.paths.www: No www directory is set, www middleware will not be loaded","timestamp":"2017-02-10T18:46:34.118Z"}
+{"level":"info","message":"No view engine is set","timestamp":"2017-02-10T18:46:34.123Z"}
+{"level":"info","message":"All trailpacks are loaded.","timestamp":"2017-02-10T18:46:34.211Z"}
+{"level":"info","message":"---------------------------------------------------------------\n        Fri Feb 10 2017 13:46:34 GMT-0500 (Eastern Standard Time)\n        Basic Info\n          Application       : trails-example-express\n          Application root  : http://localhost:3000\n          Version           : 0.0.0\n          Environment       : development","timestamp":"2017-02-10T18:46:34.213Z"}
+{"level":"info","message":"---------------------------------------------------------------","timestamp":"2017-02-10T18:46:34.214Z"}
+{"level":"info","message":"something","timestamp":"2017-02-10T18:46:34.245Z"}
+{"level":"info","message":"I am ticking 1","timestamp":"2017-02-10T18:46:35.241Z"}
+{"level":"info","message":"I am ticking 2","timestamp":"2017-02-10T18:46:36.242Z"}
+{"level":"info","message":"I am done","timestamp":"2017-02-10T18:46:36.243Z"}
+{"level":"info","message":"Shutting down...","timestamp":"2017-02-10T19:06:28.779Z"}

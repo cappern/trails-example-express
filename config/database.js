@@ -46,6 +46,7 @@ module.exports = {
 
   models: {
     defaultStore: 'mongodb', // change to dev for sqlite3
+    // defaultStore: 'dev', 
     migrate: 'alter'
   }
 

@@ -16,13 +16,15 @@ module.exports = {
    * requirements.
    */
   packs: [
-    require('trailpack-core'),
     require('trailpack-repl'),
     require('trailpack-router'),
     require('trailpack-express'),
     require('trailpack-waterline'),
     require('trailpack-passport'),
-    require('trailpack-footprints')
+    require('trailpack-cron'),
+    require('trailpack-footprints'),
+    require('trailpack-realtime'),
+    require('trailpack-bootstrap')
   ],
 
   /**

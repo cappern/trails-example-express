@@ -1,13 +1,16 @@
 # trails-example-express
 
-This repo is an example of a Todo app backend with Trails, Express and Passport JWT authentification.
+This repo is an example of a Todo app backend with Trails2, Express and Passport JWT authentification using trailpack-realtime .
 
-Trailpack used by this example : 
+Trailpack used by this example and is based on
+https://github.com/jaumard/trails-example-express : 
 
 ```
 trailpack-express
 trailpack-passport
 trailpack-waterline
+trailpack-bootstrap
+trailpack-realtime
 ```
 
 ## Registration 
