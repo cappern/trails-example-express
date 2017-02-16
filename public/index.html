@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="/primus/primus.js"></script>
+  <title>WebSockets example</title>
+  <script>
+
+  </script>
+</head>
+<body>
+<script>
+
+  //
+  // Tell primus to create a new connect to the current domain/port/protocol
+  //
+  var primus = Primus.connect('ws://localhost:3000');
+  /*
+   primus.join = function (room, fn) {
+   primus.send('join', room, fn)
+   };
+
+   primus.leave = function (room, fn) {
+   primus.send('leave', room, fn)
+   };*/
+  //
+  // Listen for incoming data and log it in our textarea.
+  //
+  primus.on('data', function received(data) {
+    log(data)
+  });
+  primus.on('initialised', data => {
+    log('initialised')
+  });
+  primus.on('open', data => {
+    log('open')
+  });
+
+  primus.on('close', data => {
+    log('close')
+  });
+  primus.on('reconnect', data => {
+    log('reconnect')
+  });
+
+  primus.on('error', data => {
+    log('error');
+  });
+
+  var writeToSocket = function () {
+    primus.write('toto');
+    console.log('toto sent');
+  }
+
+  var log = function (data) {
+    var output = document.getElementById('output');
+    output.innerHTML += data + '<br>';
+    console.log(data);
+  }
+</script>
+<button onclick="writeToSocket();return false;">Write message</button>
+<div id="output"></div>
+</body>
+</html>

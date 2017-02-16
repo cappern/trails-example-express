@@ -10,7 +10,7 @@
 module.exports = {
   express: require('express'),
 
-  cors: true,
+  cors: false,
 
   /**
    * Middlewares to load (in order)
@@ -21,10 +21,9 @@ module.exports = {
     order: [
       'addMethods',
       'cookieParser',
-      'session',
       'passportInit',
-      'passportSession',
       'bodyParser',
+      'compression',
       'methodOverride',
       'www',
       'router',

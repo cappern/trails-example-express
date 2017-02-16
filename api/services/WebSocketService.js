@@ -43,31 +43,32 @@ module.exports = class WebSocketService extends Service {
 
   init() {
     console.log('in serv init')
-    this.app.sockets.use('rooms', rooms)
-    this.app.sockets.use('emitter', emitter)
-    this.app.sockets.authorize(this._authorize)
-   //   this.log.info(this.app.sockets)
-      
-     this.app.log.debug('received message:')
-     this.app.log.info('something')
+    //this.app.sockets.use('rooms', rooms)
+    //this.app.sockets.use('emitter', emitter)
+    //this.app.sockets.authorize(this._authorize)
+    //   this.log.info(this.app.sockets)
+
+    this.app.log.debug('received message:')
+    this.app.log.info('something')
     console.log('in servlog ')
-   
+
     this.app.sockets.on('connection ', spark => {
-     console.log('in serv init3')
+      console.log('in serv init3')
       const user = spark.request.user // Retrieve connected user
       spark.join('user_' + user.id)
       spark.on('join', (room, fn) => {
         /*
-        this.app.services.PermissionService.isUserAllowed(user, room, 'access').then(perm => {
-          if (perm && perm.length > 0) {
+         this.app.services.PermissionService.isUserAllowed(user, room, 'access').then(perm => {
+         if (perm && perm.length > 0) {
 
-          }
+         }
          }).catch(err => this.log.error(err))*/
         spark.join(room, fn)
       })
+      /*
       spark.on('leave', (room, fn) => {
         spark.leave(room, fn)
-      })
+       })*/
 
       spark.on('data', data => {
 
@@ -78,7 +79,7 @@ module.exports = class WebSocketService extends Service {
     this.app.sockets.on('disconnection', spark => {
       const user = spark.request
       if (spark) {
-        spark.leave('user_' + user.id)
+        //spark.leave('user_' + user.id)
       }
     })
   }
